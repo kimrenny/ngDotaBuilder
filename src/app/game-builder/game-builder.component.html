@@ -1,5 +1,22 @@
-<app-talent-selection></app-talent-selection>
-<app-start-game></app-start-game>
-<app-early-game></app-early-game>
-<app-mid-game></app-mid-game>
-<app-late-game></app-late-game>
+<div class="talent-selection">
+  <app-talent-selection></app-talent-selection>
+</div>
+
+<div class="game-container">
+  <div class="game-section">
+    <p>Начало игры <span class="highlight">~4 мин</span></p>
+    <app-start-game></app-start-game>
+  </div>
+  <div class="game-section">
+    <p>Раняя игра <span class="highlight">~12 мин</span></p>
+    <app-early-game></app-early-game>
+  </div>
+  <div class="game-section">
+    <p>Середина игры <span class="highlight">~25 мин</span></p>
+    <app-mid-game></app-mid-game>
+  </div>
+  <div class="game-section">
+    <p>Поздняя игра <span class="highlight">31+ мин</span></p>
+    <app-late-game></app-late-game>
+  </div>
+</div>

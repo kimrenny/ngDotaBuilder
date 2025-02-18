@@ -1,0 +1,50 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 40vh;
+  background-color: rgb(30, 30, 30);
+  border-radius: 5px;
+  position: relative;
+  padding: 10px;
+}
+
+.game-container {
+  display: flex;
+  width: 95%;
+  max-width: 95%;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 25%;
+  gap: 10px;
+
+  & > * {
+    flex: 1;
+    text-align: center;
+  }
+
+  .game-section {
+    flex: 1;
+    text-align: center;
+
+    p {
+      font-size: 16px;
+      color: white;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .highlight {
+      color: orange;
+      font-weight: bold;
+    }
+  }
+}
+
+.talent-selection {
+  position: absolute;
+  top: 20px;
+  right: 70px;
+}

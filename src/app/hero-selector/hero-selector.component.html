@@ -1,0 +1,13 @@
+<div class="hero-selector">
+  <label>Выберите героя:</label>
+  <div class="dropdown">
+    <div class="dropdown-header" (click)="toggleDropdown($event)">
+      {{ selectedHeroKey || "Выберите героя" }}
+    </div>
+    <ul *ngIf="dropdownOpen" class="dropdown-list">
+      <li *ngFor="let hero of heroes" (click)="selectHero(hero, $event)">
+        {{ hero }}
+      </li>
+    </ul>
+  </div>
+</div>

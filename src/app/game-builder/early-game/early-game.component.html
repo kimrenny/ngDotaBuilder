@@ -1,0 +1,7 @@
+<div class="early-game-container">
+  <img
+    *ngFor="let item of build?.items"
+    [src]="getItemImage(item)"
+    [alt]="item"
+  />
+</div>

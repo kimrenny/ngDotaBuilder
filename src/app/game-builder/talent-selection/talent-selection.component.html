@@ -1,0 +1,10 @@
+<div *ngIf="isHeroSelected" class="talent-container">
+  <div
+    *ngFor="let talent of talentNames"
+    class="talent"
+    [class.selected]="talent === selectedTalent"
+    (click)="selectTalent(talent)"
+  >
+    <img [src]="getTalentImage(talent)" [alt]="talent" />
+  </div>
+</div>

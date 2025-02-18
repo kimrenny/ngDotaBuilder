@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://dota1x6.com",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}
