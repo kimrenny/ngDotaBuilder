@@ -45,3 +45,20 @@
     box-shadow: 0 0 10px gold;
   }
 }
+
+@media (max-width: 1366px) {
+  .talent {
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: border 0.2s ease-in-out;
+    padding: 0.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 48px;
+      height: 48px;
+    }
+  }
+}

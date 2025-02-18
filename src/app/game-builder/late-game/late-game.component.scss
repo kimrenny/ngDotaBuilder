@@ -25,3 +25,63 @@ img {
   width: 64px;
   height: 64px;
 }
+
+@media (max-width: 1366px) {
+  :host {
+    flex: 1;
+    text-align: center;
+    background-color: rgb(50, 50, 50);
+    border-radius: 1px;
+    padding: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .late-game-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+  }
+
+  img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 1024px) {
+  :host {
+    flex: 1;
+    text-align: center;
+    background-color: rgb(50, 50, 50);
+    border-radius: 1px;
+    padding: 5px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .late-game-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+  }
+
+  img {
+    width: 36px;
+    height: 36px;
+  }
+}
