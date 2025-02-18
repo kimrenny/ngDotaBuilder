@@ -47,6 +47,7 @@
   position: absolute;
   top: 20px;
   right: 70px;
+  z-index: 2;
 }
 
 @media (max-width: 1366px) {
@@ -86,6 +87,7 @@
     position: absolute;
     top: 20px;
     right: 50px;
+    z-index: 2;
   }
 }
 
@@ -126,5 +128,6 @@
     position: absolute;
     top: 20px;
     right: 25px;
+    z-index: 2;
   }
 }
