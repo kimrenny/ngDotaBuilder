@@ -1,59 +1,78 @@
-# NgDotaBuilder
+# ngDotaBuilder
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.6.
+## Project Description
 
-## Development server
+**ngDotaBuilder** is a tool for selecting items and talents in **Dota 2**.  
+This project helps players choose a hero and get item build recommendations for different stages of the game: **Start Game, Early Game, Mid Game, and Late Game**.  
+It is designed to assist both beginners and experienced players in optimizing their strategies.
 
-To start a local development server, run:
+## Dependencies
 
-```bash
-ng serve
+This project relies on the following dependencies:
+
+- **Angular**: `^19.1.0`
+- **RxJS**: `~7.8.0`
+- **Zone.js**: `~0.15.0`
+- **TSLib**: `^2.3.0`
+
+For development, the following dependencies are also used:
+
+- **Angular CLI**: `^19.1.6`
+- **TypeScript**: `~5.7.2`
+- **Karma** (for testing): `~6.4.0`
+- **Jasmine** (for unit tests): `~5.5.0`
+
+For a complete list of dependencies, check the `package.json` file.
+
+## How to Run the Project
+
+### 1. Clone the Repository
+
+Clone the project to your local machine:
+
+```sh
+git clone https://github.com/kimrenny/ngDotaBuilder.git
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Navigate to the project folder:
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+```sh
+cd ngDotaBuilder
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 2. Install Dependencies
 
-```bash
-ng generate --help
+Run the following command to install all required dependencies:
+
+```sh
+npm install
 ```
 
-## Building
+### 3. Configure API Keys
 
-To build the project run:
+Before running the project, you need to set up API keys.
+Open the following file:
 
-```bash
-ng build
+```sh
+src/app/environments/keys.environments.ts
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+### 4. Run the Project
 
-## Running unit tests
+Once configured, start the project with:
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
+```sh
+ng serve --proxy-config proxy.conf.json
 ```
 
-## Running end-to-end tests
+Then, open the following URL in your browser:
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
+```sh
+http://localhost:4200
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Now you can use ngDotaBuilder!
 
-## Additional Resources
+## Contact
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+For collaboration and contact with me - [kimrenny.tech@gmail.com](mailto:kimrenny.tech@gmail.com).
